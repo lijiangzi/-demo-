@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <!-- 事件冒泡 -->
+    <div style='width:200px;height:50px;background:red;' onmouseover='myMouseOver()' onmouseout='myMouseOut()'>
+        　　<button>到我这里来</button>
+    </div>
+
+    <!-- 无事件冒泡 -->
+    <div style='width:200px;height:50px;background:blue;' onmouseenter='myMouseEnter()' onmouseleave='myMouseLeave()'>
+        　　<button>到我这里来</button>
+    </div>
+
+    <script>
+        function myMouseOver() {
+            console.log('--------over')
+        }
+
+        function myMouseOut() {
+            console.log('--------out')
+        }
+
+        function myMouseEnter() {
+            console.log('--------enter')
+        }
+
+        function myMouseLeave() {
+            console.log('--------leave')
+        }
+    </script>
+</body>
+
+</html>
